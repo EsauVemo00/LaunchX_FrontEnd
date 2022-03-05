@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Pastel</title>
+    <link rel="shortcut icon" href="../img/Azul_Pastel_Logo.jpg">
+    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
+</head>
+
+<body>
+    <div class="general">
+        <div class="header">
+            <nav class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="../img/Azul_Pastel_Logo.jpg" alt="Logo de Azul Pastel" width="200px"></a>
+                </div>
+                <ul class="menu_list">
+                    <li><a href="pasteles.html" style="pointer-events: none;">Pasteles (Proximamente)</a></li>
+                    <li><a href="galletas.html" style="pointer-events: none;">Galletas (Proximamente)</a></li>
+                    <li><a href="Cheesecake.html" style="pointer-events: none;">Cheesecake (Proximamente)</a></li>
+                    <li><a href="Panque.html" style="pointer-events: none;">Panque (Proximamente)</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <h1>AZUL PASTEL</h1>
+            <h2>Pedido de pasteles</h2>
+            <p>RECUERDA: Los precios pueden aumentar dependiendo el diseño de tu pastel</p>
+            <form action="pedido_pastel.js">
+                <h3>Elige el tamaño de tu pastel:</h3>
+                <input type="radio" name="tamanopastel" id="mini" value="mini">
+                <label for="mini">Mini (1 a 2 porciones) -------------- $95.00</label><br>
+                <input type="radio" name="tamanopastel" id="chico" value="chico">
+                <label for="chico">Chico (8 a 10 porciones) ---------- $290.00</label><br>
+                <input type="radio" name="tamanopastel" id="mediano" value="mediano">
+                <label for="mediano">Mediano (16 a 20 porciones) ----- $355.00</label><br><br>
+
+                <h3>Elige el sabor de tu pastel:</h3>
+                <input type="radio" name="saborpastel" id="chocotrad" value="chocotrad">
+                <label for="chocotrad">Chocolate Tradicional</label><br>
+                <input type="radio" name="saborpastel" id="vainillatrad" value="vainillatrad">
+                <label for="vainillatrad">Vainilla Tradicional</label><br>
+                <input type="radio" name="saborpastel" id="redvelvettrad" value="redvelvettrad">
+                <label for="redvelvettrad">Red Velvet Tradicinal</label><br>
+                <input type="radio" name="saborpastel" id="chocotres" value="chocotres">
+                <label for="chocotres">Chocolate Tres Leches</label><br>
+                <input type="radio" name="saborpastel" id="vainillatres" value="vainillatres">
+                <label for="vainillatres">Vainilla Tres Leches</label><br>
+                <input type="radio" name="saborpastel" id="redvelvettres" value="redvelvettres">
+                <label for="redvelvettres">Red Velvet Tres</label><br><br>
+
+                <h3>Elige el relleno de tu pastel:</h3>
+                <input type="radio" name="rellenopastel" id="nutella" value="nutella">
+                <label for="nutella">Nutella</label><br>
+                <input type="radio" name="rellenopastel" id="dulceleche" value="dulceleche">
+                <label for="dulceleche">Dulce de leche</label><br>
+                <input type="radio" name="rellenopastel" id="rellenoganachechoco" value="rellenoganachechoco">
+                <label for="rellenoganachechoco">Ganache de Chocolate</label><br>
+                <input type="radio" name="rellenopastel" id="cremapastel" value="cremapastel">
+                <label for="cremapastel">Crema Pastelera</label><br>
+                <input type="radio" name="rellenopastel" id="mermedurazno" value="mermedurazno">
+                <label for="mermedurazno">Mermelada de Durazno</label><br>
+                <input type="radio" name="rellenopastel" id="mermefresa" value="mermefresa">
+                <label for="mermefresa">Mermelada de Fresa</label><br>
+                <input type="radio" name="rellenopastel" id="mermepina" value="mermepina">
+                <label for="mermepina">Mermelada de Piña</label><br>
+                <input type="radio" name="rellenopastel" id="mermezarza" value="mermezarza">
+                <label for="mermezarza">Mermelada de Zarzamora</label><br>
+                <input type="radio" name="rellenopastel" id="mermeframbu" value="mermeframbu">
+                <label for="mermeframbu">Mermelada de Frambuesa</label><br><br>
+
+                <h3>Elige la cubierta de tu pastel:</h3>
+                <input type="radio" name="cubiertapastel" id="chantilli" value="chantilli">
+                <label for="chantilli">Chantilli</label><br>
+                <input type="radio" name="cubiertapastel" id="cremamante" value="cremamante">
+                <label for="cremamante">Crema de Mantequilla</label><br>
+                <input type="radio" name="cubiertapastel" id="cubiertaganachechoco" value="cubiertaganachechoco">
+                <label for="cubiertaganachechoco">Ganache de Chocolate</label><br><br>
+                
+                <h3>Diseño de tu pastel</h3>
+                <p>Sube una imagen de una idea que tengas para tu pastel</p>
+                <input type="file" name="disenopastel" id="imagenpastel" value="imagenpastel" accept=".jpeg"><br><br>
+                <p>Describe que idea tienes con tu pastel detalladamente</p>
+                <input type="text" name="disenopastel" id="textoasdpastel" placeholder="Describe el diseño de tu pastel detalladamente..."><br><br>
+                
+                <h3>Datos generales</h3>
+                <p>Escribe tu nombre aquí</p>
+                <input type="text" name="datosgenerales" id="nombre" placeholder="Ej. Pedro Díaz Mirón">
+                <p>Télefono (Preferiblemente para Whatsapp)</p>
+                <input type="tel" name="datosgenerales" id="telefono" placeholder="***-***-**-**">
+                <p>Correo electrónico</p>
+                <input type="email" name="datosgenerales" id="correo" placeholder="ejemplo@correo.com">
+                <p>Fecha aproximada de entrega (Recuerda hacer tu pedido con dos días de anticipación)</p>
+                <input type="date" name="datosgenerales" id="fecha" min="2022-03-06">
+
+                <input type="submit" value="Hacer pedido">
+            </form>
+        </div>
+        <div class="footer">
+            <h2>Contacto Azul Pastel</h2>
+            <p>Whatsapp: 271-105-1532</p>
+            <p>Facebook: <a href="https://www.facebook.com/azulpastel.vm" target="_blank">azulpastel.vm</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/azulpastel.vm/?hl=es-la" target="_blank">azulpastel.vm</a></p>
+        </div>
+    </div>
+</body>
